@@ -1,5 +1,5 @@
-*{
-background-color: rgb(153, 153, 226);
+body{
+    background-color: rgb(153, 153, 226);
 
 }
 
@@ -12,3 +12,32 @@ background-color: rgb(153, 153, 226);
     height: 75x;
     width: 75px;
 }
+
+nav{
+
+background-color: rgb(144, 238, 144);
+
+}
+
+ul{
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+a {
+    
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+li{
+
+    margin-right: 20px;
+}
+
