@@ -46,3 +46,21 @@ header{
     background-color:gray;
     border-radius: 15px 15px 15px 15px;
 }
+
+section{
+
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(226, 255, 120);
+    border-radius: 15px 15px 15
+
+}
+
+
+.titulo-section{
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
