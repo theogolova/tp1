@@ -53,14 +53,43 @@ section{
     display: flex;
     justify-content: space-around;
     background-color:rgb(226, 255, 120);
-    border-radius: 15px 15px 15
-
+    border-radius: 15px 15px 15;
+    text-align: left;
+    height: 280px;
+    
 }
 
+.hola{
+
+    height: 170px;
+    width: 170px;
+}
 
 .titulo-section{
 
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 10px;
+    margin-left: 0%;
+    justify-content: flex-start;
 }
 
+.section{
 
+    background-color: red;
+    
+}
+
+.section1{
+
+    background-color: pink;
+    
+}
+.section2{
+
+    background-color: aqua;
+}
+
+.item{
+
+    background-color: rgb(175, 174, 174);
+}
