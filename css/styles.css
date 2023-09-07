@@ -1,9 +1,6 @@
 body{
     background-color: rgb(153, 153, 226);
-
 }
-
-
 
 .imglogo{
     height: 100x;
@@ -13,7 +10,6 @@ body{
 .buscador{
     margin-top: 35px;
 }
-
 
 .barra{
 
@@ -37,7 +33,6 @@ a {
 }
 
 li{
-
     margin-right: 20px;
 }
 
@@ -50,7 +45,6 @@ header{
 }
 
 section{
-
     padding: 20px;
     display: flex;
     justify-content: space-around;
@@ -58,11 +52,9 @@ section{
     border-radius: 15px 15px 15;
     text-align: left;
     height: 280px;
-    
 }
 
 .padre{
-
     padding: 20px;
     display: flex;
     justify-content: space-around;
@@ -72,17 +64,14 @@ section{
     height: 280px;
     border: 5px black solid;
     flex-direction: column;
-
 }
 
 .hola{
-
     height: 170px;
     width: 170px;
 }
 
 .titulo-section{
-
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 10px;
     margin-left: 0%;
@@ -90,27 +79,22 @@ section{
 }
 
 .hijo1{
-
     background-color: red;
-    
 }
 
 .hijo2{
-
     background-color: pink;
-    
 }
-.hijo3{
 
+.hijo3{
     background-color: aqua;
 }
 
 .item{
-
     background-color: rgb(175, 174, 174);
 }
 
 .caja{
 
-    
 }
+
