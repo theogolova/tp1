@@ -79,7 +79,7 @@ header{
 }
 
 .hijo1{
-    background-color: rgb(255, 121, 121));
+    background-color: rgb(255, 121, 121);
     display: flex;
     justify-content: space-around;
     flex-direction: column;
