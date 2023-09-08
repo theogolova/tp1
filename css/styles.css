@@ -1,9 +1,10 @@
 body{
     background-color: rgb(153, 153, 226);
+    height: 200%;
 }
 
 .imglogo{
-    height: 100x;
+    height: 100px;
     width: 100px;
 }
 
@@ -44,54 +45,70 @@ header{
     border-radius: 15px 15px 15px 15px;
 }
 
-section{
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    background-color:rgb(226, 255, 120);
-    border-radius: 15px 15px 15;
-    text-align: left;
-    height: 280px;
-}
+
 
 .padre{
     padding: 20px;
     display: flex;
     justify-content: space-around;
-    background-color:rgb(226, 255, 120);
+    background-color: rgb(153, 153, 226);
     border-radius: 15px 15px 15;
     text-align: left;
-    height: 280px;
-    border: 5px black solid;
+    height: 1500px;
     flex-direction: column;
+    margin-bottom: 120px;
 }
 
+
+
 .hola{
-    height: 170px;
-    width: 170px;
+    height: 270px;
+    width: 270px;
 }
 
 .titulo-section{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 10px;
-    margin-left: 0%;
+    margin-left: 600px;
     justify-content: flex-start;
 }
 
 .hijo1{
     background-color: red;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-bottom: 30px;
+    border-radius: 15px 15px 15px 15px;
+    
+}
+
+.padreitems{
+
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
 }
 
 .hijo2{
     background-color: pink;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-bottom: 30px;
+    
 }
 
 .hijo3{
     background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
 }
 
 .item{
     background-color: rgb(175, 174, 174);
+
 }
 
 .caja{
