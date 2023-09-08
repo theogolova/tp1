@@ -12,6 +12,11 @@ body{
     margin-top: 35px;
 }
 
+.form{
+
+font-size: 20px;
+}
+
 .barra{
 
     list-style-type: none;
@@ -73,7 +78,7 @@ header{
 }
 
 .hijo1{
-    background-color: red;
+    background-color: rgb(190, 255, 121);
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -90,7 +95,7 @@ header{
 }
 
 .hijo2{
-    background-color: red;
+    background-color: rgb(190, 255, 121);
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -101,7 +106,7 @@ header{
 }
 
 .hijo3{
-    background-color: red;
+    background-color: rgb(190, 255, 121);
     display: flex;
     justify-content: space-around;
     flex-direction: column;
