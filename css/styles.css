@@ -29,7 +29,7 @@ font-size: 20px;
 
 a {
     
-    color: #000000;
+    color: #ffebeb;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -46,7 +46,7 @@ header{
     padding: 20px;
     display: flex;
     justify-content: space-around;
-    background-color:rgb(255, 255, 255);
+    background-color:rgb(0, 0, 0);
     border-radius: 15px 15px 15px 15px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -57,7 +57,7 @@ header{
     padding: 20px;
     display: flex;
     justify-content: space-around;
-    background-color: rgb(153, 153, 226);
+    background-color: rgb(0, 0, 0);
     text-align: left;
     flex-direction: column;
     margin-bottom: 120px;
@@ -66,8 +66,8 @@ header{
 
 
 .img{
-    
-    width: 270px;
+    height: 350px;
+    width: 100%;
 }
 
 .titulo-section{
@@ -78,7 +78,7 @@ header{
 }
 
 .hijo1{
-    background-color: rgb(190, 255, 121);
+    background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -95,7 +95,7 @@ header{
 }
 
 .hijo2{
-    background-color: rgb(190, 255, 121);
+    background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -106,7 +106,7 @@ header{
 }
 
 .hijo3{
-    background-color: rgb(190, 255, 121);
+    background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -116,7 +116,7 @@ header{
 }
 
 .item{
-    background-color: rgb(175, 174, 174);
+    background-color: rgb(0, 0, 0);
 
 }
 
@@ -128,7 +128,7 @@ margin-left: 35px;
 }
 
 .fechapelicula{
- 
+    color: rgb(255, 237, 237);
     font-size: 25px;
     margin-left: 35px;
 }
