@@ -90,19 +90,24 @@ header{
 }
 
 .hijo2{
-    background-color: pink;
+    background-color: red;
     display: flex;
     justify-content: space-around;
-    flex-direction: row;
+    flex-direction: column;
     margin-bottom: 30px;
+    border-radius: 15px 15px 15px 15px;
+    
     
 }
 
 .hijo3{
-    background-color: aqua;
+    background-color: red;
     display: flex;
     justify-content: space-around;
-    flex-direction: row;
+    flex-direction: column;
+    margin-bottom: 30px;
+    border-radius: 15px 15px 15px 15px;
+    
 }
 
 .item{
