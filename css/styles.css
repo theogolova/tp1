@@ -52,7 +52,6 @@ header{
     display: flex;
     justify-content: space-around;
     background-color: rgb(153, 153, 226);
-    border-radius: 15px 15px 15;
     text-align: left;
     height: 1500px;
     flex-direction: column;
@@ -61,7 +60,7 @@ header{
 
 
 
-.hola{
+.img{
     height: 270px;
     width: 270px;
 }
