@@ -58,7 +58,6 @@ header{
     justify-content: space-around;
     background-color: rgb(153, 153, 226);
     text-align: left;
-    height: 1500px;
     flex-direction: column;
     margin-bottom: 120px;
 }
@@ -66,7 +65,7 @@ header{
 
 
 .img{
-    height: 270px;
+    
     width: 270px;
 }
 
@@ -130,5 +129,5 @@ margin-left: 35px;
 .fechapelicula{
  
     font-size: 25px;
-    margin-left: 18px;
+    margin-left: 35px;
 }
