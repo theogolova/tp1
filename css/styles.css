@@ -1,6 +1,6 @@
 body{
 
-    background-color: rgb(255, 121, 121);
+    background-color: rgb(95, 181, 218);
     height: 200%;
 }
 
@@ -47,7 +47,7 @@ header{
     padding: 20px;
     display: flex;
     justify-content: space-around;
-    background-color:rgb(255, 148, 148);
+    background-color: rgb(139, 139, 213);
     border-radius: 15px 15px 15px 15px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -58,7 +58,7 @@ header{
     padding: 20px;
     display: flex;
     justify-content: space-around;
-    background-color: rgb(255, 121, 121);
+    background-color: rgb(166, 215, 180);
     text-align: left;
     flex-direction: column;
     margin-bottom: 120px;
@@ -76,10 +76,11 @@ header{
     margin: 10px;
     margin-left: 600px;
     justify-content: flex-start;
+    
 }
 
 .hijo1{
-    background-color: rgb(255, 121, 121);
+    background-color: rgb(113, 188, 221);
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -97,7 +98,7 @@ header{
 }
 
 .hijo2{
-    background-color: rgb(255, 121, 121);
+    background-color: rgb(113, 188, 221);
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -108,7 +109,7 @@ header{
 }
 
 .hijo3{
-    background-color: rgb(255, 121, 121);
+    background-color: rgb(113, 188, 221);
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -118,7 +119,7 @@ header{
 }
 
 .item{
-    background-color: rgb(255, 121, 121);
+    background-color: rgb(173, 169, 169);
 
 }
 
@@ -134,3 +135,25 @@ margin-left: 35px;
     font-size: 25px;
     margin-left: 20px;
 }
+
+.pelas{
+
+width: 200px;
+
+}
+
+.pelashtml{
+
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+.pelasdiv {
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+ }
