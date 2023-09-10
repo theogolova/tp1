@@ -157,3 +157,35 @@ width: 200px;
     flex-direction: row;
     flex-wrap: wrap;
  }
+ 
+ h5{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+ }
+
+ .sinopsis{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: bolder;
+ }
+
+ .generosection{
+display: flex;
+justify-content: center;
+flex-direction: column;
+background-color: rgb(166, 215, 180);
+margin-bottom: 50px;
+margin-top: 50px;
+ }
+
+ .h2generos{
+
+font-size: 30px;
+ }
+
+ .divgeneros{
+    display: flex;
+flex-direction: row;
+justify-content: space-between;
+ }
+
