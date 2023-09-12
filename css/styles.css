@@ -189,3 +189,7 @@ flex-direction: row;
 justify-content: space-between;
  }
 
+.itemgeneros{
+
+    background-color: rgb(81, 159, 237);
+}
