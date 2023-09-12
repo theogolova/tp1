@@ -214,3 +214,9 @@ flex-direction: row;
 justify-content: space-between;
 background-color: aquamarine;
 }
+
+.titulo-generos{
+
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
