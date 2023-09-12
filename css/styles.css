@@ -1,6 +1,6 @@
 body{
 
-    background-color: rgba(51, 51, 51);
+    background-color: rgb(70, 86, 236);
     height: 200%;
 }
 
@@ -47,7 +47,7 @@ header{
     padding: 20px;
     display: flex;
     justify-content: space-around;
-    background-color: rgba(51, 51, 51, 0.8);
+    background-color: rgba(31, 38, 223, 0.8);
     border-radius: 15px 15px 15px 15px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -58,7 +58,7 @@ header{
     padding: 20px;
     display: flex;
     justify-content: space-around;
-    background-color: rgba(51, 51, 51, 0.8);
+    background-color: rgba(3, 34, 137, 0.8);
     text-align: left;
     flex-direction: column;
     margin-bottom: 120px;
@@ -80,7 +80,7 @@ header{
 }
 
 .hijo1{
-    background-color: rgba(51, 51, 51, 0.8);
+    background-color: rgba(58, 0, 203, 0.8);
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -98,7 +98,7 @@ header{
 }
 
 .hijo2{
-    background-color: rgba(51, 51, 51, 0.8);
+    background-color: rgba(23, 0, 140, 0.8);
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -109,7 +109,7 @@ header{
 }
 
 .hijo3{
-    background-color: rgba(51, 51, 51, 0.8);
+    background-color: rgba(78, 55, 255, 0.8);
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -119,7 +119,7 @@ header{
 }
 
 .item{
-    background-color: rgba(51, 51, 51, 0.8);
+    background-color: rgba(27, 66, 171, 0.8);
 
 }
 
@@ -191,7 +191,7 @@ justify-content: space-between;
 
 .itemgeneros{
 
-    background-color: rgba(51, 51, 51, 0.8);
+    background-color: rgba(19, 58, 187, 0.8);
 }
 
 .h5pelis{
