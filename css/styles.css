@@ -193,3 +193,16 @@ justify-content: space-between;
 
     background-color: rgb(81, 159, 237);
 }
+
+.h5pelis{
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    margin-left: -15px;
+    
+}
+
+article{
+
+    margin-left: 20px;
+}
