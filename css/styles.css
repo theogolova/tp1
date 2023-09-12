@@ -220,3 +220,27 @@ background-color: aquamarine;
     margin-left: 10px;
     margin-bottom: 30px;
 }
+
+.series_section{
+
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(166, 215, 180);
+    margin-top: 40px;
+}
+
+.sect_pelis{
+
+display: flex;
+justify-content: space-around;
+background-color: rgb(166, 215, 180);
+    margin-top: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.detapelas{
+
+    width: 250px;
+}
