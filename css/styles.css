@@ -249,3 +249,55 @@ background-color: rgba(51, 51, 51, 0.8);
 
     width: 250px;
 }
+
+@media (max-width: 420px){
+
+body{
+    height: 200%;
+}
+
+.barra{
+    flex-direction: column;
+   
+}
+
+.navdet{
+
+    margin-bottom: 20px;
+    
+}
+
+.buscador{
+
+   
+}
+
+header{
+flex-direction: column;
+}
+
+.padre{
+
+    flex-direction: column;
+}
+
+.hijo1{
+
+    flex-direction: row;
+}
+.hijo2{
+
+    flex-direction: row;
+}
+.hijo3{
+
+    flex-direction: row;
+}
+
+
+
+.padreitems{
+    flex-direction: column;
+    justify-content: space-between;
+}
+}
