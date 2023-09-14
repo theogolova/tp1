@@ -250,27 +250,27 @@ background-color: rgba(51, 51, 51, 0.8);
     width: 250px;
 }
 
-@media (max-width: 420px){
+@media (max-width: 767px){
 
 body{
     height: 200%;
+    
 }
 
 .barra{
     flex-direction: column;
+    text-align: center;
    
 }
 
 .navdet{
 
     margin-bottom: 20px;
-    
+    font-size: 16px;
 }
 
-.buscador{
 
-   
-}
+
 
 header{
 flex-direction: column;
@@ -279,25 +279,63 @@ flex-direction: column;
 .padre{
 
     flex-direction: column;
+    margin-left: -20px;
+    margin-top: 40px;
+    width: 100%;
+
 }
 
 .hijo1{
 
     flex-direction: row;
+    margin-left: 20px;
+    width: 100%;
+    height: 100%;
+    
 }
+
+
 .hijo2{
 
     flex-direction: row;
+    margin-left: 20px;
+    width: 100%;
 }
 .hijo3{
 
     flex-direction: row;
+    margin-left: 20px;
+    width: 100%;
 }
 
+.titulo-section{
 
+    margin-bottom: 20px;
+}
+.img{
+max-width: 90%;
+height: auto;
+}
 
 .padreitems{
-    flex-direction: column;
-    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
 }
+
+.item{
+
+    width: 90%;
+    margin: 10px;
+}
+
+
+footer{
+text-align: center;
+
+}
+
+
 }
