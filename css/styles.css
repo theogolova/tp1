@@ -3,6 +3,11 @@ body{
     background-color: rgb(70, 86, 236);
     height: 200%;
     color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .imglogo{
@@ -40,7 +45,6 @@ a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 15px;
     
 }
@@ -55,8 +59,12 @@ header{
     justify-content: space-around;
     background-color: rgba(31, 38, 223, 0.8);
     border-radius: 15px 15px 15px 15px;
-    font-family: Arial, Helvetica, sans-serif;
     color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
 
 
@@ -79,7 +87,11 @@ header{
 }
 
 .titulo-section{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;   
     margin: 10px;
  
     justify-content: flex-start;
@@ -171,23 +183,32 @@ height: 350px
  }
  
  h5{
-    font-family: 'Times New Roman', Times, serif;
+
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-size: 15px;
  }
 
  .sinopsis{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-size: 15px;
     font-weight: bolder;
  }
 
  .generosection{
-display: flex;
-justify-content: center;
-flex-direction: column;
-  background-color: rgba(31, 71, 205, 0.8);
-margin-bottom: 50px;
-margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(31, 71, 205, 0.8);
+    margin-bottom: 50px;
+    margin-top: 50px;
  }
 
  .h2generos{
@@ -197,8 +218,8 @@ font-size: 30px;
 
  .divgeneros{
     display: flex;
-flex-direction: row;
-justify-content: space-between;
+    flex-direction: row;
+    ustify-content: space-between;
  }
 
 .itemgeneros{
@@ -208,7 +229,11 @@ justify-content: space-between;
 
 .h5pelis{
 
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-size: 15px;
     margin-left: -15px;
     
@@ -244,9 +269,9 @@ background-color: rgba(51, 51, 51, 0.8);
 
 .sect_pelis{
 
-display: flex;
-justify-content: space-around;
-background-color: rgba(51, 51, 51, 0.8);
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(51, 51, 51, 0.8);
     margin-top: 40px;
     flex-direction: row;
     flex-wrap: wrap;
