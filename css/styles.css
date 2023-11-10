@@ -219,7 +219,7 @@ font-size: 30px;
  .divgeneros{
     display: flex;
     flex-direction: row;
-    ustify-content: space-between;
+    justify-content: space-between;
  }
 
 .itemgeneros{
