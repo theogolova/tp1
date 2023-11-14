@@ -15,11 +15,11 @@ function search() {
             console.err(err)
         })
 
-    const searchButton = document.getElementById("searchButton")
-    const resultList = document.getElementById("padresItems")
-    resultList.innerHTML = ""
-
-    const filter = data.filter()
+        const searchButton = document.getElementById("searchButton")
+        const resultList = document.getElementById("padresItems")
+        resultList.innerHTML = ""
+    
+        const filter = data.filter()
 }
 
 
