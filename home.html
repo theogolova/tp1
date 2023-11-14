@@ -31,7 +31,7 @@
             <form action="resultado.html" method="get" class="buscador">
                 <label for="busqueda" class="form">Ingresar busqueda:</label>
                 <input type="text" id="busqueda" name="q" required>
-                <button type="submit"> Buscar</button>
+                <button type="submit" id="searchButton" onclick="search()"> Buscar</button>
             </form>
 
     </header>
@@ -41,7 +41,7 @@
         
            
             <h2 class="titulo-section">Peliculas Populares</h2>
-        <div class="padreitems">
+        <div class="padreitems" id="padreItems">
             <div class="item">
                 <img class="img" src="./portadas/1.jpeg" alt="img" >
                 <p class="titulo-item"> <a class="titulopelicula" href="detallepelicula.html">Shot piano player</a></p>
