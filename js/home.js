@@ -36,7 +36,8 @@ fetch(moviesapi)
   });
 
 
-let logofooter = document.getElementById('tmdb-logo');
+
+  let logofooter = document.getElementById('tmdb-logo');
 
 // Esto es un ejemplo: cambia el tamaño al pasar el mouse sobre el logo
 logofooter.addEventListener('mouseover', function () {

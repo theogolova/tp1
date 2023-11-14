@@ -21,8 +21,6 @@ fetch(genreApi)
         divGeneros.innerHTML = generos
     })
 
-
-
 let logofooter = document.getElementById('tmdb-logo');
 
 // Ejemplo: Cambiar el tamaño al pasar el mouse sobre el logo
