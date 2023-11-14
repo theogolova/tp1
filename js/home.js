@@ -22,7 +22,7 @@ fetch(moviesapi)
 .catch(function(console.error) {
     console.log("error: " + error);
 })
-=======
+
 let logofooter = document.getElementById('tmdb-logo');
 
 // Ejemplo: Cambiar el tamaño al pasar el mouse sobre el logo
