@@ -47,3 +47,5 @@ logofooter.addEventListener('mouseover', function () {
 logofooter.addEventListener('mouseout', function () {
   this.style.width = '100px'; // Volver al tamaño original
 });
+
+
