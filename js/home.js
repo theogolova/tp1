@@ -1,6 +1,10 @@
 let formulario = document.querySelector(".buscador");
-let moviesapi =
-  "https://api.themoviedb.org/3/movie/now_playing?api_key=aad4ccb8efdd15fad341576d3301e95e";
+let apiKey = "fb127d20d8c5df555d204c84bd6bab37";
+let moviesapi = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`;
+
+let seriesapi = `https://api.themoviedb.org/3/tv/popular?api_key=${apiKey}`;
+
+let moviesDestacadasApi = `https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}`
 
 fetch(moviesapi)
   .then(function (res) {
@@ -11,7 +15,7 @@ fetch(moviesapi)
 
     for (let index = 0; index < 5; index++) {
       let pelicula = data.results[index];
-      console.log(pelicula.id)
+      console.log(pelicula.id);
       // Agregar el contenido de cada película a la cadena
       peliculas += `
         <div class="item">
@@ -23,10 +27,70 @@ fetch(moviesapi)
         </div>
       `;
     }
-    
+
     console.log(data.results);
     const moviesList = document.getElementById("padreItems");
     moviesList.innerHTML = peliculas; // Aasigna el valor al innerHTML
+  })
+  .catch(function (err) {
+    console.error(err);
+  });
+
+fetch(seriesapi)
+  .then(function (res) {
+    return res.json();
+  })
+  .then(function (data) {
+    let series = "";
+
+    for (let index = 0; index < 5; index++) {
+      let serie = data.results[index];
+      console.log(serie.id);
+      // Agregar el contenido de cada película a la cadena
+      series += `
+        <div class="item">
+          <a href="./detallepelicula.html?id=${serie.id}" class="detallePelicula" id="${serie.id}">
+            <img class="img" src="https://image.tmdb.org/t/p/w500/${serie.poster_path}">
+            <h3 class="titulo-item">${serie.original_title}</h3>
+            <p class="fechapelicula">Fecha de estreno: <br>${serie.release_date}</p>
+          <a>
+        </div>
+      `;
+    }
+
+    console.log(data.results);
+    const seriesList = document.getElementById("padreItemsSeries");
+    seriesList.innerHTML = series; // Aasigna el valor al innerHTML
+  })
+  .catch(function (err) {
+    console.error(err);
+  });
+
+  fetch(moviesDestacadasApi)
+  .then(function (res) {
+    return res.json();
+  })
+  .then(function (data) {
+    let peliculasDestacadas = "";
+
+    for (let index = 0; index < 5; index++) {
+      let peliculaDestacada = data.results[index];
+      console.log(peliculaDestacada.id);
+      // Agregar el contenido de cada película a la cadena
+      peliculasDestacadas += `
+        <div class="item">
+          <a href="./detallepelicula.html?id=${peliculaDestacada.id}" class="detallePelicula" id="${peliculaDestacada.id}">
+            <img class="img" src="https://image.tmdb.org/t/p/w500/${peliculaDestacada.poster_path}">
+            <h3 class="titulo-item">${peliculaDestacada.original_title}</h3>
+            <p class="fechapelicula">Fecha de estreno: <br>${peliculaDestacada.release_date}</p>
+          <a>
+        </div>
+      `;
+    }
+
+    console.log(data.results);
+    const peliculasDestacadasList = document.getElementById("padreItemsDestacadas");
+    peliculasDestacadasList.innerHTML = peliculasDestacadas; // Aasigna el valor al innerHTML
   })
   .catch(function (err) {
     console.error(err);

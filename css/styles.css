@@ -79,7 +79,7 @@ header{
     text-align: left;
     flex-direction: column;
     margin-bottom: 120px;
-    height: 1000px;
+    height: 100%;
 }
 
 
@@ -116,7 +116,6 @@ header{
     margin-bottom: 30px;
     border-radius: 15px 15px 15px 15px;
     color: #ffffff;
-    height: 1500px;
     align-items: stretch;
 }
 
