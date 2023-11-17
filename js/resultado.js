@@ -27,14 +27,14 @@ fetch(
       if(listaPeliculas.length === 0) {
         nombrePelicula.innerHTML = "no hay resultado para su búsqueda"
         pelisRel.innerHTML = "no hay resultado para su búsqueda"
-      }
+      }else{
       pelicula += `
             <article class="coinc un">
                 <a href="./detallepelicula.html?id=${listaPeliculas[0].id}">${listaPeliculas[0].title}
                 <img class="FavFoto" src="https://image.tmdb.org/t/p/w500/${listaPeliculas[0].poster_path}">
                 </a>
             </article>`;
-      nombrePelicula.innerHTML = pelicula;
+      
       similares += `
             <h4>Resultados similares a tu busqueda: '${busquedaTag}'</h4>`;
       resultadosSimilares.innerHTML = similares;
@@ -51,8 +51,8 @@ fetch(
                 </article>`;
       }
       pelisRel.innerHTML = pelisRelacionadas;
-      nombrePelicula.innerHTML = pelicula;
-    
+      resultadosSimilares.innerHTML = pelicula;
+      }
   }).catch(function (err) {
     console.log(err);
   })
