@@ -1,47 +1,44 @@
 let formulario = document.querySelector(".buscador");
-let moviesapi = 'https://api.themoviedb.org/3/movie/now_playing?api_key=aad4ccb8efdd15fad341576d3301e95e';
+let moviesapi =
+  "https://api.themoviedb.org/3/movie/now_playing?api_key=aad4ccb8efdd15fad341576d3301e95e";
 
 fetch(moviesapi)
   .then(function (res) {
     return res.json();
   })
   .then(function (data) {
+    let peliculas = "";
 
-    let peliculas = ""
-
-    for (let index = 0; index < 12; index++) {
+    for (let index = 0; index < 5; index++) {
       let pelicula = data.results[index];
-
+      console.log(pelicula.id)
       // Agregar el contenido de cada película a la cadena
       peliculas += `
         <div class="item">
-          <img class="img" src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}">
-          <h3 class="titulo-item">${pelicula.original_title}</h3>
-          <p class="fechapelicula">Fecha de estreno: <br>${pelicula.release_date}</p>
+          <a href="./detallepelicula.html?id=${pelicula.id}" class="detallePelicula" id="${pelicula.id}">
+            <img class="img" src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}">
+            <h3 class="titulo-item">${pelicula.original_title}</h3>
+            <p class="fechapelicula">Fecha de estreno: <br>${pelicula.release_date}</p>
+          <a>
         </div>
       `;
-      console.log(data.results)
     }
-
+    
+    console.log(data.results);
     const moviesList = document.getElementById("padreItems");
     moviesList.innerHTML = peliculas; // Aasigna el valor al innerHTML
-
   })
   .catch(function (err) {
     console.error(err);
   });
 
-
-
-  let logofooter = document.getElementById('tmdb-logo');
+let logofooter = document.getElementById("tmdb-logo");
 
 // Esto es un ejemplo: cambia el tamaño al pasar el mouse sobre el logo
-logofooter.addEventListener('mouseover', function () {
-  this.style.width = '150px'; // Cambiar el ancho
+logofooter.addEventListener("mouseover", function () {
+  this.style.width = "150px"; // Cambiar el ancho
 });
 
-logofooter.addEventListener('mouseout', function () {
-  this.style.width = '100px'; // Volver al tamaño original
+logofooter.addEventListener("mouseout", function () {
+  this.style.width = "100px"; // Volver al tamaño original
 });
-
-

@@ -1,54 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resultado</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@300&family=Raleway:wght@100;400&family=Roboto:wght@100&family=Work+Sans&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <img class="imglogo" src="./Imagenestrabajo/Logo Marca de Ropa Urban Grunge Negro y Blanco (1).png" alt="">
-            </div>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@300&family=Raleway:wght@100;400&family=Roboto:wght@100&family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
 
-            <nav>
-                <ul class="barra">
-                    <li class="navdet"><a href="home.html">Home</a></li>
-                    <li class="navdet"><a href="generos.html">Generos</a></li>
-                    <li class="navdet"><a href="favoritos.html">Favoritos</a></li>
-                    <li class="navdet"><a href="detallepelicula.html">Pelicula</a></li>
-                    <li class="navdet"><a href="detalleserie.html">Series</a></li>
-                </ul>
-
-            </nav>
-
-        <form action="resultado.html" method="get" class="buscador">
-            <label for="busqueda" class="form">Ingresar busqueda:</label>
-            <input type="text" id="busqueda" name="q" required>
-            <button type="submit"> Buscar</button>
-        </form>
-
-    </header>
-        <h1>Resultado busqueda: </h1>
-        <div id="search-results">
-            <h2>Resultados de búsqueda para: <span id="search-query">Texto ingresado en el input</span></h2>
-            <ul>
-                <li><a href="/tp1/js/resultado.js">Título de la Película</a></li>
-            </ul>
-            <p id="no-results-message">No hay resultados para su búsqueda.</p>
+    <header class="header">
+        <div class="busqueda">
+            <form action="./resultado.html" method="get">
+                <label>Search:</label>
+                <input type="text" name="with_keywords" value="" placeholder="Ingrese su búsqueda">
+            </form>
         </div>
-        <script src="/tp1/js/resultado.js"></script>
+        <div class="menu-navegacion">
+            <a href="index.html">Inicio</a>
+            <a href="generos.html">Géneros</a>
+            <a href="./favoritos.html">Favoritos</a>
+        </div>
+    </header>
+    
+    <section class="resBusquedas">
+        <h4>Coincidencias a tu búsqueda: </h4>
+    </section>
+    
+    <div class="coincidenciaPadre">
+        <section class="coincidencia">
+            <!-- Contenido de la sección coincidenciaSpider -->
+        </section>
+    </div>
+    
+    <section class="resBusqueda">
+        <h4>Resultados similares a tu búsqueda: </h4>
+    </section>
+    
+    <div class="busqRelacionadasPadre">
+        <section class="busqRelacionadas">
+ 
+        </section>
+    </div>
+    
+    <script type="text/javascript" src="./js/resultado.js"></script>
+    </body>
+           <!-- <article class="relac un">
+                <a href="detalle-serie.html">Shooter</a>
+                <img src="./img/shooter.webp" alt="Shooter">
+            </article>
+            <article class="relac tx">
+                <a href="detallepelicula.html">Transformers</a>
+                <img src="./img/transformers.jpeg" alt="Transformers">
+            </article>
+            <article class="relac top">
+                <a href="detallepelicula.html">Top Gun</a>
+                <img src="./img/topgun.jpeg" alt="Top Gun">
+            </article> -->
+            <!-- Otros artículos relacionados -->
+  <!-- <body>
+    <header>
+      <div class="logo">
+        <img
+          class="imglogo"
+          src="./Imagenestrabajo/Logo Marca de Ropa Urban Grunge Negro y Blanco (1).png"
+          alt=""
+        />
+      </div>
 
-        <footer>
+      <nav>
+        <ul class="barra">
+          <li class="navdet"><a href="home.html">Home</a></li>
+          <li class="navdet"><a href="generos.html">Generos</a></li>
+          <li class="navdet"><a href="favoritos.html">Favoritos</a></li>
+          <li class="navdet"><a href="detallepelicula.html">Pelicula</a></li>
+          <li class="navdet"><a href="detalleserie.html">Series</a></li>
+        </ul>
+      </nav>
 
-            <p>Antonio Cao Lavignolle, Theo Golova, Fermin Garcia Belmonte.</p>
-            <p>&copy; Todos los derechos reservados</p>
-            <img src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg" alt="TMDBLogo" id="tmdb-logo">
-        </footer>
+      <form action="resultado.html" method="get" class="buscador">
+        <label for="busqueda" class="form">Ingresar busqueda:</label>
+        <input type="text" id="busqueda" name="q" required />
+        <button type="submit" id="searchButton">Buscar</button>
+      </form>
+    </header>
+    <h1>Resultado busqueda:</h1>
+    <div id="searchResults">
+
+    </div>
+
+    <footer>
+      <p>Antonio Cao Lavignolle, Theo Golova, Fermin Garcia Belmonte.</p>
+      <p>&copy; Todos los derechos reservados</p>
+      <img
+        src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg"
+        alt="TMDBLogo"
+        id="tmdb-logo"
+      />
+    </footer>
     <script src="./js/resultado.js"></script>
-</body>
+  </body> -->
 </html>

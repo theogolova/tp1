@@ -16,26 +16,24 @@
             </div>
             <nav>
                 <ul class="barra">
-                    <li class="navdet"><a href="home.html">Home</a></li>
-                    <li class="navdet"><a href="favoritos.html">Favoritos</a></li>
-                    <li class="navdet"><a href="resultado.html">Resultado</a></li>
-                    <li class="navdet"><a href="detalledelgenero.html">Generinfo</a></li>
-                    <li class="navdet"><a href="detallepelicula.html">Pelicula</a></li>
-                    <li class="navdet"><a href="detalleserie.html">Series</a></li>
+                    <li class="navdet"><a href="./home.html">Home</a></li>
+                    <li class="navdet"><a href="./favoritos.html">Favoritos</a></li>
+                    <li class="navdet"><a href="./detallepelicula.html">Pelicula</a></li>
+                    <li class="navdet"><a href="./detalleserie.html">Series</a></li>
                 </ul>
             </nav>
-        <form action="resultado.html" method="get" class="buscador">
-            <label for="busqueda" class="form">Ingresar busqueda:</label>
-            <input type="text" id="busqueda" name="q" required>
-            <button type="submit"> Buscar</button>
-        </form>
+            <div class="busqueda">
+                <form action="./resultado.html" method="get">
+                    <label>Search:</label>
+                    <input type="text" name="with_keywords" value="" placeholder="Ingrese su búsqueda">
+                </form>
+            </div>
 
     </header>
     <main>
         <section class="generosection">
             <h2 class="h2generos">Generos de las Peliculas</h2>
             <div class="divgeneros" id="divgeneros">
-            </div>
             </div>
         </section>
 

@@ -19,25 +19,26 @@
                         <li class="navdet"><a href="home.html">Home</a></li>
                         <li class="navdet"><a href="generos.html">Generos</a></li>
                         <li class="navdet"><a href="favoritos.html">Favoritos</a></li>
-                        <li class="navdet"><a href="resultado.html">Resultado</a></li>
                         <li class="navdet"><a href="detalleserie.html">Serie</a></li>
                     </ul>
     
                 </nav>
     
-            <form action="resultado.html" class="buscador">
-                <label for="busqueda" class="form">Ingresar busqueda:</label>
-                <input type="text" id="busqueda" name="q" required>
-                <button type="submit"> Buscar</button>
-            </form>
-    
+                <div class="busqueda">
+                    <form action="./resultado.html" method="get">
+                        <label>Search:</label>
+                        <input type="text" name="with_keywords" value="" placeholder="Ingrese su búsqueda">
+                    </form>
+                </div>
         </header>
 
         <main>
             <section class="sect_pelis">
 
-            <article class="detapelas">
-                <h2>Barbie</h2>
+            <article class="detapelis" id="detapelis">
+                
+
+                <!-- <h2>Barbie</h2>
                 <img  class="pelas" src="./portadas/2.jpeg" alt="">
                 <h5>Calificación: 8.5</h5>
                 <h5>Fecha de estreno: 20 de julio</h5>
@@ -46,14 +47,16 @@
                 <h5> <a class="h5pelis" href="detalledelgenero.html">Genero</a></h5>
                 <button><a class="favpelas" href="favoritos.html">Agregar a Favoritos</a></button>
                 <button id="btn-recommendations">Ver Recomendaciones</button>
-                     <!-- Sección de Recomendaciones oculta por defecto -->
                 <div id="recommendations" style="display: none;">
                 <h3>Recomendaciones</h3>
                 <ul>
                 <li><a href="moviedetailhtml">Recomendación 1</a></li>
-                <!-- Más recomendaciones... -->
-                </ul>
+                </ul> -->
 
+            </article>
+
+            <article class="recommendations" id="recommendations">
+                
             </article>
 
             </section>

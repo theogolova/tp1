@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul class="barra">
+      <li class="navdet"><a class="navdet" href="./generos.html">Generos</a></li>
+      <li class="navdet"><a class="navdet" href="./favoritos.html">Favoritos</a></li>
+      <li class="navdet"><a class="navdet" href="./detallepelicula.html">Peliculas</a></li>
+      <li class="navdet"><a class="navdet" href="./detalleserie.html">Series</a></li>
+  </ul>
+    <div class="busqueda">
+      <form action="./resultado.html" method="get">
+          <label>Search:</label>
+          <input type="text" name="with_keywords" value="" placeholder="Ingrese su búsqueda">
+      </form>
+  </div>
+    <main>
+      <section class="generosection">
+        <h2 class="h2generos">Generos de las Peliculas</h2>
+        <div class="divgeneros" id="divgeneros"></div>
+      </section>
+    </main>
+
+    <script src="./js/detalledelgenero.js"></script>
+  </body>
+</html>
