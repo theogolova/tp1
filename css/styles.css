@@ -9,6 +9,20 @@ body{
     font-family: 'Roboto', sans-serif;
     font-family: 'Work Sans', sans-serif;
 }
+
+.item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 5px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.detallePelicula {
+    color: #007bff;
+    text-decoration: none;
+}
+
 .pelicula-container {
     border: 1px solid #ccc;
     margin: 10px;
