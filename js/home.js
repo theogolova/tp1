@@ -9,7 +9,7 @@ fetch(moviesapi)
 
     let peliculas = ""
 
-    for (let index = 0; index < 5; index++) {
+    for (let index = 0; index < 12; index++) {
       let pelicula = data.results[index];
 
       // Agregar el contenido de cada película a la cadena
@@ -26,10 +26,6 @@ fetch(moviesapi)
     const moviesList = document.getElementById("padreItems");
     moviesList.innerHTML = peliculas; // Aasigna el valor al innerHTML
 
-    input.addEventListener("evento", function () {
-      // Aquí puedes poner el código que se ejecutará cuando ocurra el evento en el input
-      console.log("Evento en el input");
-    });
   })
   .catch(function (err) {
     console.error(err);

@@ -10,17 +10,17 @@ fetch(genreApi)
         for (let index = 0; index < 5; index++) {
             let genero = data.genres[index];
 
-            generos += 
+            generos += ` 
             <div class="item">
-                <h3 class="itemgeneros"><a href="detalledelgenero.html">${genero.name}</a></h3>
+                <h3 class="itemgeneros"><a href="./generos/${genero.name}.html">${genero.name}</a></h3>
             </div>
-          ;
+            `;
 
         }
+        console.log(data.genres)
         const divGeneros = document.getElementById("divgeneros")
         divGeneros.innerHTML = generos
     })
-
 let logofooter = document.getElementById('tmdb-logo');
 
 // Ejemplo: Cambiar el tamaño al pasar el mouse sobre el logo
@@ -31,4 +31,3 @@ logofooter.addEventListener('mouseover', function () {
 logofooter.addEventListener('mouseout', function () {
     this.style.width = '100px'; // Volver al tamaño original
 });
-﻿
