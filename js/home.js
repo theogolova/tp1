@@ -21,14 +21,12 @@ fetch(moviesapi)
         <div class="item">
           <a href="./detallepelicula.html?id=${pelicula.id}" class="detallePelicula" id="${pelicula.id}">
             <img class="img" src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}">
-            <h3 class="titulo-item">${pelicula.original_title}</h3>
+            <h3 class="titulo-item">${pelicula.title}</h3>
             <p class="fechapelicula">Fecha de estreno: <br>${pelicula.release_date}</p>
           <a>
         </div>
       `;
     }
-
-    console.log(data.results);
     const moviesList = document.getElementById("padreItems");
     moviesList.innerHTML = peliculas; // Aasigna el valor al innerHTML
   })
@@ -49,60 +47,10 @@ fetch(seriesapi)
       // Agregar el contenido de cada película a la cadena
       series += `
         <div class="item">
-          <a href="./detallepelicula.html?id=${serie.id}" class="detallePelicula" id="${serie.id}">
+          <a href="./detalleserie.html?id=${serie.id}" class="detalleSerie" id="${serie.id}">
             <img class="img" src="https://image.tmdb.org/t/p/w500/${serie.poster_path}">
-            <h3 class="titulo-item">${serie.original_title}</h3>
-            <p class="fechapelicula">Fecha de estreno: <br>${serie.release_date}</p>
+            <h3 class="titulo-item">${serie.name}</h3>
           <a>
         </div>
       `;
     }
-
-    console.log(data.results);
-    const seriesList = document.getElementById("padreItemsSeries");
-    seriesList.innerHTML = series; // Aasigna el valor al innerHTML
-  })
-  .catch(function (err) {
-    console.error(err);
-  });
-
-  fetch(moviesDestacadasApi)
-  .then(function (res) {
-    return res.json();
-  })
-  .then(function (data) {
-    let peliculasDestacadas = "";
-
-    for (let index = 0; index < 5; index++) {
-      let peliculaDestacada = data.results[index];
-      console.log(peliculaDestacada.id);
-      // Agregar el contenido de cada película a la cadena
-      peliculasDestacadas += `
-        <div class="item">
-          <a href="./detallepelicula.html?id=${peliculaDestacada.id}" class="detallePelicula" id="${peliculaDestacada.id}">
-            <img class="img" src="https://image.tmdb.org/t/p/w500/${peliculaDestacada.poster_path}">
-            <h3 class="titulo-item">${peliculaDestacada.original_title}</h3>
-            <p class="fechapelicula">Fecha de estreno: <br>${peliculaDestacada.release_date}</p>
-          <a>
-        </div>
-      `;
-    }
-
-    console.log(data.results);
-    const peliculasDestacadasList = document.getElementById("padreItemsDestacadas");
-    peliculasDestacadasList.innerHTML = peliculasDestacadas; // Aasigna el valor al innerHTML
-  })
-  .catch(function (err) {
-    console.error(err);
-  });
-
-let logofooter = document.getElementById("tmdb-logo");
-
-// Esto es un ejemplo: cambia el tamaño al pasar el mouse sobre el logo
-logofooter.addEventListener("mouseover", function () {
-  this.style.width = "150px"; // Cambiar el ancho
-});
-
-logofooter.addEventListener("mouseout", function () {
-  this.style.width = "100px"; // Volver al tamaño original
-});

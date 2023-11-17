@@ -10,6 +10,97 @@ body{
     font-family: 'Work Sans', sans-serif;
 }
 
+  /* Estilos para la sección de detalles de la película */
+  #detapelis {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .FavFoto {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .titulo_detallepelicula {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  .date_detallepelicula {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  .vote_detallepelicula {
+    font-size: 18px;
+    color: #ff9900;
+    margin-top: 10px;
+  }
+  
+  .desc_detallepelicula {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  
+  .time_detallepelicula {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  /* Estilos para la lista de géneros */
+  #detapelis {
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  /* Estilos para la sección de recomendaciones */
+  #recommendations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .img_recommendations {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .title_recommendations {
+    font-size: 16px;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .title_recommendations:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilos para el pie de página */
+  #tmdb-logo {
+    display: block;
+    margin: 20px auto;
+    max-width: 100px;
+    transition: width 0.3s ease;
+  }
+  
+  /* Estilos al pasar el mouse sobre el logo */
+  #tmdb-logo:hover {
+    width: 150px;
+  }
+  
+
 .item {
     border: 1px solid #ddd;
     padding: 10px;
@@ -315,6 +406,7 @@ background-color: rgba(51, 51, 51, 0.8);
     margin-top: 40px;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 
 }
 
