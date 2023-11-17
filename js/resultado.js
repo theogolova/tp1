@@ -34,6 +34,7 @@ fetch(
                 <img class="FavFoto" src="https://image.tmdb.org/t/p/w500/${listaPeliculas[0].poster_path}">
                 </a>
             </article>`;
+      
       similares += `
             <h4>Resultados similares a tu busqueda: '${busquedaTag}'</h4>`;
       resultadosSimilares.innerHTML = similares;
@@ -51,7 +52,9 @@ fetch(
       }
       pelisRel.innerHTML = pelisRelacionadas;
       resultadosSimilares.innerHTML = pelicula;
-    }
+      }
+  }).catch(function (err) {
+    console.log(err);
   })
   .catch(function (err) {
     console.log(err);
