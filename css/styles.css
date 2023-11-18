@@ -1,3 +1,115 @@
+.generosectionSeries {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(31, 71, 205, 0.8);
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.divdetalles {
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.detalleRelacionadas{
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-around;
+    align-items: center;
+
+}
+ #detaseries {
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .sect_series {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(51, 51, 51, 0.8);
+    margin-top: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .FavFotoSeries {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .titulo_detalleserie {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  .date_detalleserie {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .vote_detalleserie {
+    font-size: 18px;
+    color: #ff9900;
+    margin-top: 10px;
+  }
+  
+  .desc_detalleserie {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  
+  .time_detalleserie {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  /* Estilos para la lista de géneros */
+  #detaserie p {
+    margin: 5px 0;
+  }
+  
+  /* Estilos para la sección de recomendaciones */
+  #serieRecom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .img_serierecommendations {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .title_serierecommendations {
+    font-size: 16px;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .title_serierecommendations:hover {
+    text-decoration: underline;
+  }
+
 body{
 
     background-color: rgb(70, 86, 236);
@@ -105,8 +217,14 @@ body{
     border: 1px solid #ddd;
     padding: 10px;
     margin: 5px;
-    background-color: #f9f9f9;
     border-radius: 5px;
+    background-color: rgba(27, 66, 171, 0.8);
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 .detallePelicula {
@@ -351,6 +469,9 @@ font-size: 30px;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 5px 0;
+    display: flex;
+
  }
 
 .itemgeneros{
@@ -512,7 +633,6 @@ text-align: center;
     display: flex;
     flex-direction: column;
 }
-
 
 
 }

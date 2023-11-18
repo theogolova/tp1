@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generos</title>
+    <title>Series</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,15 +12,21 @@
 <body>
     <header>
         <div class="logo">
-            <img class="imglogo" src="./Imagenestrabajo/Logo Marca de Ropa Urban Grunge Negro y Blanco (1).png" alt="">
-            </div>
-            <nav>
-                <ul class="barra">
-                    <li class="navdet"><a href="home.html">Home</a></li>
-                    <li class="navdet"><a href="generos.html">Generos</a></li>
-                </ul>
+        <img class="imglogo" src="./Imagenestrabajo/Logo Marca de Ropa Urban Grunge Negro y Blanco (1).png" alt="">
+        </div>
 
+            <nav>
+                
+                <ul class="barra">
+                    <li class="navdet"><a href="./home.html">Home</a></li>
+                    <li class="navdet"><a href="./generos.html">Generos</a></li>
+                    <li class="navdet"><a href="./favoritos.html">Favoritos</a></li>
+                    <li class="navdet"><a href="./detallepelicula.html">Peliculas</a></li>
+                    
+                </ul>
+                
             </nav>
+
             <div class="busqueda">
                 <form action="./resultado.html" method="get">
                     <label>Search:</label>
@@ -29,25 +35,22 @@
             </div>
 
     </header>
-    <main>
-        <section class="generosection">
-            <h2 class="h2generos">Generos de las Peliculas</h2>
-            <div class="divgeneros" id="divgeneros">
-            </div>
-        </section>
-        <section class="generosectionSerie">
-            <h2 class="h2generos">Generos de las Series</h2>
-            <div class="divgeneros" id="divgenerosSeries">
-            </div>
-        </section>
 
+    <main>
+        <section class="sect_series">
+        <article class="detaseries" id="detaseries">
+        </article>
+        <article class="serieRecom" id="serieRecom">
+
+        </article>
     </main>
+    </section>
     <footer>
+
         <p>Antonio Cao Lavignolle, Theo Golova, Fermin Garcia Belmonte.</p>
         <p>&copy; Todos los derechos reservados</p>
-        <img src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg" alt="TMDBLogo" id="tmdb-logo" style="width: 100px;">
+        <img src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg" alt="TMDBLogo" id="tmdb-logo">
     </footer>
-    <script src="./js/generos.js"></script>
-    
+<script src="./js/detalleserie.js"></script>
 </body>
 </html>

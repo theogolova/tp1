@@ -32,19 +32,16 @@ fetch(genreSeriesApi)
     })
     .then(function (data) {
         let generos = ""
-        console.log(data.genres)
         for (let i = 0; i < 16; i++) {
             let genero = data.genres[i];
-            console.log(genero)
             generos += `
             <div class="item">
                 <h3><a href="./detalledelgenero.html?id=${genero.id}" id="${genero.id}" class="detallePelicula">${genero.name}</a></h3>
             </div>
           `;
         }
-        console.log(data.genres)
-        const divGeneros = document.getElementById("divgenerosSeries")
-        divGeneros.innerHTML = generos
+        const divgenerosSeries = document.getElementById("divgenerosSeries")
+        divgenerosSeries.innerHTML = generos
     })
 
 
@@ -53,4 +50,8 @@ let logofooter = document.getElementById('tmdb-logo');
 // Ejemplo: Cambiar el tamaño al pasar el mouse sobre el logo
 logofooter.addEventListener('mouseover', function () {
     this.style.width = '150px'; // Cambiar el ancho
+});
+
+logofooter.addEventListener('mouseout', function () {
+    this.style.width = '100px'; // Volver al tamaño original
 });

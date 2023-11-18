@@ -12,7 +12,6 @@ fetch(seriesDetailsApi)
     let detaseries = document.getElementById("detaseries");
     let serie = "";
     let generos = ""
-    console.log(data)
 
     for (let i = 0; i < data.genres.length; i++) {
       generos += `<p><a href="./detalledelgenero.html?id=${data.genres[i].id}">${data.genres[i].name}</p>`
@@ -48,10 +47,19 @@ fetch(serieRecommendationsApi)
       recomendacionS += `
         <a href="./detallepelicula.html?id=${recsData[i].id}">
             <img class="img_serierecommendations" src="https://image.tmdb.org/t/p/w200/${recsData[i].poster_path}">
-            <h4 class="title_serierecommendations">${recsData[i].title}</h4>
+            <h4 class="title_serierecommendations">${recsData[i].name}</h4>
         </a>
         `;
     } recommendationsS.innerHTML = recomendacionS;
   });
 
 let logofooter = document.getElementById("tmdb-logo");
+
+// Ejemplo: Cambiar el tamaño al pasar el mouse sobre el logo
+logofooter.addEventListener("mouseover", function () {
+  this.style.width = "150px"; // Cambiar el ancho
+});
+
+logofooter.addEventListener("mouseout", function () {
+  this.style.width = "100px"; // Volver al tamaño original
+});

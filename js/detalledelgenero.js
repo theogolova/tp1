@@ -3,7 +3,6 @@ let queryString = location.search;
 let genres = new URLSearchParams(queryString);
 let genresTag = genres.get('id');
 
-console.log(genresTag)
 
 fetch(
   `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&sort_by=popularity.asc&with_genres=${genresTag}`
@@ -12,9 +11,8 @@ fetch(
     return res.json();
   })
   .then(function (data) {
-    let divgeneros = document.getElementById("divgeneros")
+    let divgeneros = document.getElementById("divdetalles")
     let peliculasGeneros = data.results;
-    console.log(peliculasGeneros)
     let pelicula = "";
 
     for (let i = 1; i < peliculasGeneros.length; i++) {
@@ -35,9 +33,8 @@ fetch(
       return res.json();
     })
     .then(function (data) {
-      let divgeneros = document.getElementById("divgeneros")
+      let divgeneros = document.getElementById("divdetalles")
       let peliculasGeneros = data.results;
-      console.log(peliculasGeneros)
       let pelicula = "";
   
       for (let i = 1; i < peliculasGeneros.length; i++) {
@@ -55,3 +52,9 @@ let logofooter = document.getElementById('tmdb-logo');
 
 // Ejemplo: Cambiar el tamaño al pasar el mouse sobre el logo
 logofooter.addEventListener('mouseover', function() {
+    this.style.width = '150px'; // Cambiar el ancho
+});
+
+logofooter.addEventListener('mouseout', function() {
+    this.style.width = '100px'; // Volver al tamaño original
+});

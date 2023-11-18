@@ -3,8 +3,6 @@ let queryString = location.search;
 let busqueda = new URLSearchParams(queryString);
 let busquedaTag = busqueda.get("with_keywords");
 
-console.log(busqueda);
-console.log(busquedaTag);
 
 fetch(
   `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${busquedaTag}`
@@ -13,7 +11,6 @@ fetch(
     return res.json();
   })
   .then(function (data) {
-    console.log(data.results);
     let listaPeliculas = data.results;
     let nombrePelicula = document.querySelector(".coincidencia");
     let resultadosSimilares = document.querySelector(".resBusqueda");
@@ -29,12 +26,11 @@ fetch(
       pelisRel.innerHTML = "no hay resultado para su búsqueda";
     } else {
       pelicula += `
-            <article class="coinc un">
-                <a href="./detallepelicula.html?id=${listaPeliculas[0].id}">${listaPeliculas[0].title}
+            <article class="article_resultado">
+                <a class="a_resultado" href="./detallepelicula.html?id=${listaPeliculas[0].id}">${listaPeliculas[0].title}
                 <img class="FavFoto" src="https://image.tmdb.org/t/p/w500/${listaPeliculas[0].poster_path}">
                 </a>
             </article>`;
-      
       similares += `
             <h4>Resultados similares a tu busqueda: '${busquedaTag}'</h4>`;
       resultadosSimilares.innerHTML = similares;
@@ -44,17 +40,15 @@ fetch(
 
       for (let i = 1; i < listaPeliculas.length; i++) {
         pelisRelacionadas += `
-                <article class="relac un">
-                    <a href="./detallepelicula.html?id=${listaPeliculas[i].id}" class="detallePelicula" id="${listaPeliculas[i].id}">${listaPeliculas[i].title}
+                <article class="relacionadas">
+                    <a href="./detallepelicula.html?id=${listaPeliculas[i].id}" class="detalleRelacionadas" id="${listaPeliculas[i].id}">${listaPeliculas[i].title}
                     <img src="https://image.tmdb.org/t/p/w500/${listaPeliculas[i].poster_path}">
                     </a>
                 </article>`;
       }
       pelisRel.innerHTML = pelisRelacionadas;
       resultadosSimilares.innerHTML = pelicula;
-      }
-  }).catch(function (err) {
-    console.log(err);
+    }
   })
   .catch(function (err) {
     console.log(err);
